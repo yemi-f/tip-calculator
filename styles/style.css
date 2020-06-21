@@ -79,6 +79,11 @@ body {
   box-shadow: 5px 5px 8px #c7e7d7;
 }
 
+button:focus,
+input:focus {
+  outline: 0;
+}
+
 #tip-calc-btn {
   color: #008145;
   font-size: 2em;
