@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="flex-container">
+            <div class="background" id="tip-calc">
+                <form>
+                    <label for="subtotal" class="label-text">Enter bill total</label><br><span>$</span>
+                    <input type="number" min="0" value="70.00" onkeypress="calcualateTipAmount()" id="subtotal"
+                        class="num" onClick="this.select();"><br>
+                    <label for="percent" class="label-text">Choose tip percentage</label><br>
+
+                    <div class="btn-group">
+                        <button type="button" onkeypress="calcualateTipAmount()" class="radio" id="btn-0">0%</button>
+                        <button type="button" onkeypress="calcualateTipAmount()" class="radio" id="btn-5">5%</button>
+                        <button type="button" onkeypress="calcualateTipAmount()" class="radio" id="btn-10">10%</button>
+                        <button type="button" onkeypress="calcualateTipAmount()" class="radio" id="btn-15">15%</button>
+                        <input type="number" onkeypress="calcualateTipAmount()" value="0" min="0" max="100" id="percent"
+                            step="5" class="num" onClick="this.select();"><span>%</span><br>
+                    </div>
+
+                    <label for="split" class="label-text">Split</label><br>
+                    <input type="number" onkeypress="calcualateTipAmount()" min="1" value="1" step="1" id="split"
+                        class="num" onClick="this.select();"><br>
+                </form>
+                <button type="button" id="tip-calc-btn">Calculate</button>
+            </div>
+
+            <div class="foreground">
+                <h2>Total per person</h2>
+                <h1 id="total-per-person-value">$0.00</h1>
+                <div class="flex-container" id="bill-and-tip">
+                    <div id="bill">
+                        <h2 id="h3-text">bill</h2>
+                        <h3 id="bill-value">$0.00</h2>
+                    </div>
+
+                    <div id="tip">
+                        <h2 id="h3-text">tip</h3>
+                            <h3 id="tip-value">$0.00</h3>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

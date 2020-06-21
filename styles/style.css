@@ -1,0 +1,140 @@
+body {
+  background-color: #f9fffc;
+  color: #e1e1e1;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.background,
+.foreground {
+  padding: 16px;
+  border-radius: 8px;
+  margin: 16px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.foreground {
+  color: #949394;
+  background-color: #d6f4e5;
+  margin-top: 0px;
+}
+
+.label-text {
+  color: #949394;
+  display: inline-block;
+  margin: 8px;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.radio,
+.num {
+  border: 0px;
+  background-color: #ffffff;
+  color: #008145;
+  margin-bottom: 16px;
+}
+
+#tip-calc-btn {
+  border: 0px;
+  background-color: #ffffff;
+  color: #008145;
+  margin-bottom: 0px;
+}
+
+#subtotal {
+  border-bottom: 2px solid #bbbbbb;
+  padding-bottom: 8px;
+  width: 120px;
+}
+
+#subtotal,
+#split {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 2em;
+  font-weight: 500;
+  background-color: #f9fffc;
+  font-weight: bolder;
+}
+
+#split {
+  width: 80px;
+}
+
+.radio,
+#tip-calc-btn {
+  cursor: pointer;
+  font-size: 1.5em;
+  font-weight: 300;
+  border: 0px;
+  border-radius: 16px;
+  box-shadow: 5px 5px 8px #c7e7d7;
+}
+
+#tip-calc-btn {
+  color: #008145;
+  font-size: 2em;
+}
+
+span {
+  color: #008145;
+  font-size: 1.5em;
+}
+
+button:hover,
+.radio:focus,
+#tip-calc-btn:hover {
+  background-color: #4ca16a;
+  color: #ffffff;
+  border: 0px;
+}
+
+#percent {
+  width: 56px;
+  border: 0px;
+  border-radius: 16px;
+  padding-left: 8px;
+  box-shadow: 5px 5px 8px #c7e7d7;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+#bill-and-tip {
+  display: flex;
+  flex-direction: row;
+}
+
+#bill,
+#tip {
+  padding: 24px;
+}
+
+h2,
+#h3-text {
+  font-weight: 300;
+}
+
+#tip-value,
+#bill-value {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 2em;
+  font-weight: bold;
+  color: #3e8758;
+}
+
+#total-per-person-value {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  color: #3e8758;
+  font-size: 4em;
+}
